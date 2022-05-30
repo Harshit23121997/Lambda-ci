@@ -28,4 +28,4 @@ jobs:
         run: |
           node index.js
           zip -j deploy.zip ./../Tech/*
-          aws lambda update-function-code --function-name=abc --zip-file=fileb://deploy.zip
+          aws lambda update-function-code --function-name=arn:aws:lambda:ap-south-1:654092284024:function:abc --zip-file=fileb://deploy.zip
