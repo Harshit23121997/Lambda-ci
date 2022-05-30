@@ -21,3 +21,5 @@ app.get('/', function (req,res){
 const server = httpServer.listen(3000,()=>{
     console.log("Server is running")
 })
+
+module.exports = index
