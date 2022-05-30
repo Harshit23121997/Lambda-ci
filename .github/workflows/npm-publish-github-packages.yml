@@ -17,7 +17,7 @@ jobs:
         uses: aws-actions/configure-aws-credentials@v1
         with:
           aws-access-key-id: 'AKIAZQSXQGB4HXAJLQDN'
-          aws-secret-access-key: $ {{ secrets.AWS_SECRET_KEY }}
+          aws-secret-access-key: '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'
           aws-region: ap-south-1
       - name: npm install
         env:
