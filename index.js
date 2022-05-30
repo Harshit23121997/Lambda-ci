@@ -10,7 +10,7 @@ var httpServer = http.createServer(app);
 
 app.get('/', function (req,res){
     console.log("Here")
-    res.send("Hello World1")
+    res.send("Hello Wosrld1")
 })
 
 
