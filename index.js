@@ -13,7 +13,7 @@ app.use(cors())
 
 app.get('/', function (req,res){
     console.log("Here")
-    res.send("Hello Wosrld1")
+    return "Hello"
 })
 
 
