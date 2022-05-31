@@ -27,6 +27,6 @@ jobs:
           npm i
       - name: deploy
         run: |
-          cd Lambda-ci && npm ci
+          npm ci
           zip -j deploy.zip ./Lambda-ci/*
           aws lambda update-function-code --function-name=arn:aws:lambda:ap-south-1:654092284024:function:abc --zip-file=fileb://deploy.zip
