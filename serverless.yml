@@ -19,8 +19,8 @@ provider:
 
 
 functions:
-  hello:
-    handler: handler.hello
+  abc:
+    handler: handler.index
     events:
       - httpApi:
           path: "*"
