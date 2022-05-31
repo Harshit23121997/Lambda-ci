@@ -14,7 +14,7 @@ app.use(cors())
 
 app.get('/', function (req,res){
     console.log("Hsere")
-    return "Hello"
+    res.send("Here")
 })
 
 
