@@ -13,7 +13,7 @@ var httpServer = http.createServer(app);
 app.use(cors())
 
 app.get('/', function (req,res){
-    console.log("Here")
+    console.log("Hsere")
     return "Hello"
 })
 
