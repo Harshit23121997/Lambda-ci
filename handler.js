@@ -1,2 +1,4 @@
 'use strict';
-exports.handler = index
+const app = require('./app')
+const serverless = require ('serverless-http')
+module.exports.hello = serverless(app)
