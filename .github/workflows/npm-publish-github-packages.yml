@@ -24,7 +24,7 @@ jobs:
           CI: true
         run: |
           npm ci
-      - name: deploy
+      - name: deploy 
         run: |
           npm run build
           zip -j deploy.zip ./../Lambda-ci/*
