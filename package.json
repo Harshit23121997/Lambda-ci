@@ -2,7 +2,7 @@
   "name": "afleet-backend",
   "version": "1.0.0",
   "description": "Afleet Dev",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "start": "node app.js",
     "dev": "env-cmd -f ./config/dev.env nodemon server.js",
