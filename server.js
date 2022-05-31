@@ -20,7 +20,7 @@ process.on("uncaughtException", err =>{
     console.log("Shutting Down Server"+err.stack)
     process.exit(1)
 })
-const app = require('./app');
+const app = require('./index');
 var httpServer = http.createServer(app);
 
 Program.belongsTo(ProgramPackage,{
