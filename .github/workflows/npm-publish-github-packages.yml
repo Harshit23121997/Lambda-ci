@@ -13,6 +13,7 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '12'
+      
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
@@ -26,6 +27,6 @@ jobs:
           npm i
       - name: deploy
         run: |
-          npm run build
-          zip -j deploy.zip ./../Lambda-ci/*
+          cd Lambda-ci && npm ci
+          zip -j deploy.zip ./Lambda-ci/*
           aws lambda update-function-code --function-name=arn:aws:lambda:ap-south-1:654092284024:function:abc --zip-file=fileb://deploy.zip
